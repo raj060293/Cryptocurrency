@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+    id 'application' // remove if library
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/org.bouncycastle/bcprov-jdk16
+    implementation("org.bouncycastle:bcprov-jdk16:1.45")
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.10.1'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+application {
+    mainClass = 'com.web3.app.App'
+}
