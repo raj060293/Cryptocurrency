@@ -2,8 +2,10 @@ package com.web3.cryptocurrency;
 
 public class TransactionInput {
 
+    //Every input has an output. This id is the transaction id of the TransactionOutput
     private String transactionOutputId;
 
+    //This is the unspent transaction output
     private TransactionOutput UTXO;
 
     public TransactionInput(String transactionOutputId) {

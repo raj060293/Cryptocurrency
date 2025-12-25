@@ -6,7 +6,7 @@ import java.security.spec.ECGenParameterSpec;
 
 public class CryptographyHelper {
 
-    public static String hash(String data) {
+    public static String generateHash(String data) {
         try {
             MessageDigest digest = MessageDigest.getInstance("SHA-256");
             byte[] hash = digest.digest(data.getBytes(StandardCharsets.UTF_8));
