@@ -4,6 +4,7 @@ import com.web3.blockchain.Blockchain;
 
 import java.security.PrivateKey;
 import java.security.PublicKey;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Transaction {
@@ -32,6 +33,7 @@ public class Transaction {
         this.receiver = receiver;
         this.amount = amount;
         this.inputs = inputs;
+        this.outputs = new ArrayList<>();
         calculateHash();
     }
 

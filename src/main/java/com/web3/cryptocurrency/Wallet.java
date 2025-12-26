@@ -65,5 +65,11 @@ public class Wallet {
         return balance;
     }
 
+    public PrivateKey getPrivateKey() {
+        return privateKey;
+    }
 
+    public PublicKey getPublicKey() {
+        return publicKey;
+    }
 }
